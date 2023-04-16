@@ -24,16 +24,6 @@ nav{
 	padding-left: 20px;
 	clear: both;
 }
-ul.navnotes{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 25%;
-	background-color: #f1f1f1;
-	height: 100%;
-	position: fixed;
-	overflow: auto;
-}
 nav a{
 	box-sizing: border-box;
 	border-radius: 25px;
@@ -63,6 +53,9 @@ p, ul{
 }
 .footerp{
     color: #000000;
+}
+h1.notes{
+	color: #FFFFFF;
 }
 h2{
 	background: #ff69b4;

@@ -16,14 +16,14 @@ Including another URLconf
 from django.urls import path
 from django.contrib import admin
 from . import views
-from .views import home, login_view, logout_view, register
+from .views import home, login_view, logout_view, register, note_list
 
 urlpatterns = [
     path('', home, name='home'),
     path('registration/login.html', login_view, name='login'),
     path('registration/logout.html', logout_view, name='logout'),
     path('registration/registration.html', register, name='register'),
-    path('note_list.html', views.note_list, name='note_list'), 
+    path('note_list.html', note_list, name='note_list'),
     path('admin/', admin.site.urls),
     path('note/<int:pk>/', views.note_detail, name='note_detail'),
     path('note/new/', views.note_new, name='note_new'),

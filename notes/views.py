@@ -25,7 +25,7 @@ def login_view(request):
             login(request, user)
             return redirect('home')
         else:
-            return render(request, 'registration/login.html', {'form': form})
+            return render(request, 'login.html', {'form': form})
         
 def logout_view(request):
     logout(request)
